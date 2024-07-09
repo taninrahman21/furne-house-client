@@ -1,17 +1,21 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../../Pages/Home/Home";
 import Main from "../../Layout/Main";
-import Login from "../../Pages/Login/Login";
-import SignUp from "../../Pages/SignUp/SignUp";
 import ContactUs from "../../Pages/ContactUs/ContactUs";
-import Shop from "../../Pages/Shop/Shop";
+import Home from "../../Pages/Home/Home";
+import Login from "../../Pages/Login/Login";
 import Product from "../../Pages/Shareable/Product/Product";
+import Shop from "../../Pages/Shop/Shop";
+import SignUp from "../../Pages/SignUp/SignUp";
 
 export const routes = createBrowserRouter([
   {
     path: '/',
     element: <Main></Main>,
     children: [
+      {
+        path: '/',
+        element: <Home />
+      },
       {
         path: '/home',
         element: <Home />

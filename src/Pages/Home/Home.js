@@ -1,9 +1,12 @@
 import React from 'react';
+import NewLetter from '../Shareable/NewsLetter/NewLetter';
+import Header from './Header';
 
 const Home = () => {
   return (
     <div>
-      This is Home
+      <Header />
+      <NewLetter />
     </div>
   );
 };
