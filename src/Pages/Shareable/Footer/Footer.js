@@ -36,7 +36,7 @@ const Footer = () => {
 
         <div className='flex justify-between py-4'>
           <div className='flex text-xs text-[#F3F5F7]'>
-            <p>Copyright © 2023 Iconic. All rights reserved</p>
+            <p>Copyright © 2023 Tanin Rahman. All rights reserved</p>
             <Link to='/home' className='pl-10'>Privacy Policy</Link>
             <Link to='/home' className='pl-10'>Terms of Use</Link>
           </div>

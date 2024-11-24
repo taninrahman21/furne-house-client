@@ -6,8 +6,7 @@ import newsLetterImg2 from '../../../assets/newsletterImg2.png';
 
 const NewLetter = () => {
   return (
-    <div className='w-11/12 m-auto py-10'>
-
+    <div className='py-10'>
       <div className='flex w-full'>
         <div className='w-3/12 bg-[#eee]'>
           <img className='w-full' src={newsLetterImg2} alt="" />
@@ -24,7 +23,6 @@ const NewLetter = () => {
             </form>
           </div>
         </div>
-
 
         <div className='w-3/12 bg-[#eee]'>
           <img className='h-full w-full' src={newsLetterImg3} alt="" />

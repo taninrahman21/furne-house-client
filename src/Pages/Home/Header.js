@@ -3,7 +3,7 @@ import headerImg from '../../assets/banner.png';
 
 const Header = () => {
   return (
-    <div className="flex w-11/12 m-auto flex-col md:flex-row items-center py-4">
+    <div className="flex flex-col md:flex-row items-center py-4">
       <div className="md:w-1/2 flex flex-col items-start p-6">
         <h2 className="font-bold uppercase text-6xl leading-none mb-8">Masterpieces <br /> Crafted From <span className='text-[#38CB89]'>Solid <br /> Wood</span> </h2>
         <p className="text-black text-xl mb-8">
