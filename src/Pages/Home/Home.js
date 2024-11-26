@@ -7,7 +7,7 @@ import Header from './Header';
 
 const Home = () => {
   return (
-    <div className='w-11/12 m-auto'>
+    <div>
       <Header />
       <Novelties />
       <Advertisement2 />

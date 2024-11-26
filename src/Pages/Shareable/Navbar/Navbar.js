@@ -30,7 +30,10 @@ const Navbar = () => {
               <NavLink to='/shop' className={({ isActive }) => isActive ? 'text-black font-semibold' : ''}>Shop</NavLink>
             </li>
             <li className='pr-8'>
-              <NavLink to='/product' className={({ isActive }) => isActive ? 'text-black font-semibold' : ''}>Product</NavLink>
+              <NavLink to='/blog' className={({ isActive }) => isActive ? 'text-black font-semibold' : ''}>Blog</NavLink>
+            </li>
+            <li className='pr-8'>
+              <NavLink to='/about-us' className={({ isActive }) => isActive ? 'text-black font-semibold' : ''}>About Us</NavLink>
             </li>
             <li className=''>
               <NavLink to='/contact-us' className={({ isActive }) => isActive ? 'text-black font-semibold' : ''}>Contact Us</NavLink>
