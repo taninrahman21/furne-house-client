@@ -25,9 +25,14 @@ export const routes = createBrowserRouter([
         element: <Shop />
       },
       {
-        path: '/product',
+        path: '/product/:id',
         element: <Product />
       },
+      // {
+      //   path: '/product/:id',
+      //   element: <Product></Product>
+      //   // loader: ({ params }) => fetch(`https://the-smart-tutor-server.vercel.app/service/${params.id}`)
+      // },
       {
         path: '/contact-us',
         element: <ContactUs />
