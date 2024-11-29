@@ -22,6 +22,11 @@ module.exports = {
         slideDown: 'slideDown 0.5s ease-out',
         slideUp: 'slideUp 0.5s ease-out',
       },
+      colors: {
+        brown: {
+          500: '#8B4513',
+        },
+      },
     },
   },
   plugins: [],

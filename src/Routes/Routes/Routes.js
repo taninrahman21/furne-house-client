@@ -6,6 +6,9 @@ import Login from "../../Pages/Login/Login";
 import Product from "../../Pages/Shareable/Product/Product";
 import Shop from "../../Pages/Shop/Shop";
 import SignUp from "../../Pages/SignUp/SignUp";
+import Blog from "../../Pages/Blog/Blog";
+import AboutUs from "../../Pages/AboutUs/AboutUs";
+import Post from "../../Pages/Blog/Post";
 
 export const routes = createBrowserRouter([
   {
@@ -25,6 +28,14 @@ export const routes = createBrowserRouter([
         element: <Shop />
       },
       {
+        path: '/blog',
+        element: <Blog />
+      },
+      {
+        path: '/blog/:id',
+        element: <Post />
+      },
+      {
         path: '/product/:id',
         element: <Product />
       },
@@ -36,6 +47,10 @@ export const routes = createBrowserRouter([
       {
         path: '/contact-us',
         element: <ContactUs />
+      },
+      {
+        path: '/about-us',
+        element: <AboutUs />
       },
       {
         path: '/login',

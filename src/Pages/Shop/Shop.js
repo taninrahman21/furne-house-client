@@ -29,8 +29,7 @@ const Shop = () => {
       price: 69.9,
       ratings: '4',
       image: p1,
-      categories: 'Chair & Benches',
-      categoriesImage: categoriesBanner,
+      categories: 'Chair & Benches'
     },
     {
       id: 2,
@@ -38,8 +37,7 @@ const Shop = () => {
       price: 232.9,
       ratings: '4',
       image: p2,
-      categories: 'Chair & Benches',
-      categoriesImage: categoriesBanner,
+      categories: 'Chair & Benches'
     },
     {
       id: 3,
@@ -47,8 +45,7 @@ const Shop = () => {
       price: 159.9,
       ratings: '4',
       image: p3,
-      categories: 'Tables',
-      categoriesImage: categoriesBanner,
+      categories: 'Tables'
     },
     {
       id: 4,
@@ -56,8 +53,7 @@ const Shop = () => {
       price: 120.9,
       ratings: '4',
       image: p4,
-      categories: 'Tables',
-      categoriesImage: categoriesBanner,
+      categories: 'Tables'
     },
     {
       id: 5,
@@ -65,8 +61,7 @@ const Shop = () => {
       price: 99.9,
       ratings: '4',
       image: p5,
-      categories: 'Sofas',
-      categoriesImage: categoriesBanner,
+      categories: 'Sofas'
     },
     {
       id: 6,
@@ -74,8 +69,7 @@ const Shop = () => {
       price: 122.9,
       ratings: '4',
       image: p6,
-      categories: 'Beds',
-      categoriesImage: categoriesBanner,
+      categories: 'Beds'
     },
   ];
 
@@ -150,16 +144,16 @@ const Shop = () => {
 
   return (
     <div className="pb-6">
-      <p className="text-gray-600 mb-2">
+      <p className="text-gray-600 my-1">
         Home &gt; Shop &gt; <span className="font-semibold text-black">{category}</span>
       </p>
 
       {/* Banner Section */}
-      <div className="flex h-[150px] md:h-[220px] lg:h-[350px] items-center">
-        <div className='h-full'>
+      <div className="flex h-[150px] md:h-[220px] lg:h-[350px] items-center pt-4">
+        <div className='h-full w-full'>
           <img className='w-full h-full' src={categoriesBanner} alt="" />
         </div>
-        <div className='bg-[#ebebeb] w-2/4 h-full flex items-center'>
+        <div className='bg-[#ebebeb] w-full h-full flex items-center'>
           <h1 className="text-3xl md:text-6xl font-bold text-black">{category}</h1>
         </div>
       </div>
@@ -168,7 +162,7 @@ const Shop = () => {
       {/* Main Content */}
       <div className="flex flex-col-reverse lg:flex-row gap-6 py-10 md:py-14 lg:py-20">
         {/* Sidebar: Categories and Filters */}
-        <aside className="w-full lg:w-3/12 pr-32">
+        <aside className="w-full lg:w-1/3 xl:w-1/4 pr-32">
           {/* Sort By */}
           <div className="mb-10">
             <h2 className="text-xl font-semibold mb-4">Sort By</h2>
@@ -229,7 +223,7 @@ const Shop = () => {
         </aside>
 
         {/* Product Display */}
-        <main className="w-full lg:w-3/4">
+        <main className="w-full lg:w-4/6 xl:w-3/4">
 
           <div className='mb-5'>
             {/* Sort Option Dropdown */}
@@ -258,7 +252,7 @@ const Shop = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full object-cover h-[370px] mb-4"
+                      className="w-full object-cover lg:h-[350px] xl:h-[370px] mb-4"
                     />
                     <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex items-center justify-around bg-black bg-opacity-80 w-3/5 h-0 overflow-hidden group-hover:h-8 transition-all duration-300">
                       <div
